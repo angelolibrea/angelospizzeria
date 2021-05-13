@@ -1,0 +1,286 @@
+:root {
+  --red: #9D1111;
+  --dark: #343A40;
+  --secondary: #6C757D;
+  --gray1: #C4C4C4;
+  --gray2: #E5E5E5;
+  --gray3: #F5F5F5;
+  --light: #f8f9fa;
+  --navcolor: #181818;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: var(--gray3);
+}
+
+/* navbar */
+
+.topnav {
+	padding: 5px 15px;
+	display: flex;
+	background-color: var(--navcolor);
+	justify-content: space-between;
+	align-items: center;
+}
+
+.topnav a {
+	padding: 20px 15px;
+	color: var(--light);
+	text-align: center;
+	text-decoration: none;
+	padding: 
+	font-size: 17px;
+}
+
+.topnav a:hover {
+	background-color: var(--light);
+	color: var(--dark);
+}
+
+.topnav span{
+	display: flex;
+	align-items: center;
+}
+
+.nav-header-logo{
+	padding: 0px 10px;
+	color: var(--light);
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/* advertisement */
+
+.advertisement{
+	max-width: 80%;
+	margin: auto;
+	padding-top: 40px;
+	display: flex;
+	align-items: center;
+}
+
+.advertisement section{
+	padding: 20px;
+	text-align: center;
+	max-width: 600px;
+	margin: auto;
+}
+
+.advertisement img{
+	border-radius: 20px;
+	max-width: 500px;
+}
+
+.advertisement-text{
+	line-height: 2;
+}
+
+.advertisement-text h2{
+	margin: 0 0 30px 0;
+}
+
+.advertisement-text p{
+	margin: 10px 0;
+}
+
+.advertisement-text a{
+	font-size: 17px;
+	padding: 15px 35px;
+	margin: 50px 0 0 0;
+	display: inline-block;
+	text-decoration: none;
+	background-color: var(--dark);
+	border-color: var(--dark);
+	color: var(--light);
+}
+
+.advertisement-text a:hover{
+	background-color: #23272b;
+	border-color: #1d2124;
+}
+
+.advertisement-text a:focus{
+  color: #fff;
+  background-color: #23272b;
+  border-color: #1d2124;
+  box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5);
+}
+
+/* locations */
+
+.locations{
+	background-color: var(--navcolor);
+	color: var(--light);
+	margin: 30px 0;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+
+.locations section, .pizzas section{
+	text-align: center;
+	width: 500px;
+}
+
+.locations section h3{
+	margin: 20px;
+}
+
+.locations section p{
+	margin: 20px;
+	line-height: 1.5;
+}
+
+/* pizzas */
+
+.pizzas{
+	max-width: 80%;
+	margin: auto;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+.pizzas img{
+	max-width: 400px;
+	max-height: 400px;
+	border-radius: 20px;
+}
+
+.pizzas ul{
+	list-style-type: none;
+}
+
+.pizzas h3{
+	margin: 20px;
+	padding: 10px;
+}
+
+.pizzas li{
+	padding: 10px;
+}
+
+.pizzas li:hover, .pizzas h3:hover{
+	background-color: var(--gray2)
+}
+
+
+/* footer */
+
+footer{
+	background-color: var(--navcolor);
+	color: var(--light);
+	text-align: center;
+	margin-top: 20px;
+	padding: 20px;
+}
+
+/* order */
+
+.order{
+	box-shadow: 0 8px 16px 0 var(--gray1);
+	max-width: 80%;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	padding: 30px 10px;
+	justify-content: center;
+}
+
+.order section:first-child{
+	text-align: center;
+	padding: 20px 10px;
+}
+
+.order section:first-child h3{
+	margin: 20px;
+	color: var(--dark);
+}
+
+.order img{
+	width: 250px;
+	height: 250px;
+}
+
+#ranger{
+	margin: 20px;
+}
+
+.divider{
+	 height: 1px;
+	 background-color: var(--gray2);
+}
+
+/* menu */
+
+.menu{
+	padding: 30px;
+	text-align: center;
+	background-color: var(--light)
+}
+
+.menu > div{
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	margin-top: 20px; 
+	padding: 30px 10px;
+	background-color: var(--gray3);
+	max-width: 60%;
+}
+
+.menu > div:hover{
+	background-color: var(--gray2);
+}
+
+.menu img{
+	max-width: 100px;
+	max-height: 100px;
+}
+
+.pizza-title{
+	margin: 10px;
+	padding: 10px;
+	text-align: left;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.menu form{
+	margin: 0 20px;
+}
+
+.menu div h3{
+	margin: 0 20px;
+	padding: 0 10px;
+}
+
+form input{
+	padding: 5px;
+}
+
+form select{
+	padding: 5px;
+}
+
+#quantity1, #quantity2{
+	margin-right: 20px;
+}
+
+#orderButton, #clearButton{
+	padding: 10px 20px;
+	margin: 20px;
+}
+
+.backButton {
+	max-width: 80%;
+	margin: auto;
+	margin-top: 20px;
+}

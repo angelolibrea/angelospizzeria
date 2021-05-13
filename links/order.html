@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Angelo's Pizzeria Order</title>
+	<link rel="stylesheet" type="text/css" href="../styles/main.css">
+</head>
+<body>
+	<section class="backButton">
+		<a href="../index.html" role="button">
+			Back
+		</a>
+	</section>
+	<article class="order">
+		<section>
+			<img id="pizzesizer" src="../images/pizzasizer.png">
+			<br>
+			<h3>Medium Pizza: 12 inches with 8 slices</h3>
+			<input id="ranger" type="range" min="1" max="4" value="2" />
+		</section>
+		<div class="divider"></div>
+		<section class="menu">
+			<h3>Menu</h3>
+			<div>
+				<img src="../images/pizza3.jpg">
+				<div>
+					<p class="pizza-title">The Udacity Special</p>	
+					<form>
+						<label for="quantity">Quantity:</label>
+  						<input type="text" id="quantity1" maxlength="2" size="2" value="0">
+						
+						<label for="size1">Size:</label>
+						<select id="size1">
+						  <option value="small">Small</option>
+						  <option value="medium">Medium</option>
+						  <option value="large">Large</option>
+						  <option value="extra-large">Extra-large</option>
+						</select>
+					</form>
+				</div>
+				<h3>$25</h3>
+			</div>
+			<div>
+				<img src="../images/pizza4.jpg">
+				<div>
+					<p class="pizza-title">The Cameron Special</p>	
+					<form>
+						<label for="quantity">Quantity:</label>
+  						<input type="text" id="quantity2" maxlength="2" size="2" value="0">
+						
+						<label for="size2">Size:</label>
+						<select id="size2">
+						  <option value="small">Small</option>
+						  <option value="medium">Medium</option>
+						  <option value="large">Large</option>
+						  <option value="extra-large">Extra-large</option>
+						</select>
+					</form>
+				</div>
+				<h3>$19</h3>
+			</div>
+			<button id="orderButton" onclick="order()">Order</button>
+			<button id="clearButton" onclick="clearForm()">Clear</button>
+		</section>
+	</article>
+	<footer>Thanks for visiting! © 2021 Angelo's Pizzeria</footer>
+	<script src="../scripts/main.js"></script>
+</body>
+</html>
